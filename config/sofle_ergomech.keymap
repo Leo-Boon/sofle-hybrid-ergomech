@@ -99,7 +99,7 @@
                                                                 &kp A      &kp B     &kp C      &kp D      &kp E
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_wheel SCROLL_DOWN SCROLL_UP>;
         };
 
         raise_layer {
@@ -121,7 +121,7 @@
                                                                                   &kp A      &kp B     &kp C     &kp D      &kp E
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_wheel SCROLL_DOWN SCROLL_UP>;
         };
 
         adjust_layer {
