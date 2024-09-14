@@ -66,7 +66,9 @@
                                                                       &kp ENTER  &kp RIGHT      &kp UP_ARROW  &kp LEFT         &kp DOWN
             >;
 
-            sensor-bindings = <&scrolling2>, <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
