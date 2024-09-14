@@ -28,24 +28,6 @@
     };
 
     behaviors {
-        SCROLLING: SCROLLING {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLLING";
-            #sensor-binding-cells = <0>;
-            bindings = <&mwh SCROLL_UP>, <&mwh SCROLL_DOWN>;
-
-            tap-ms = <150>;
-        };
-
-        SCROLLINGWPARAM: SCROLLINGWPARAM {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "SCROLLINGWPARAM";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-
-            tap-ms = <150>;
-        };
-
         SCROLLING2: SCROLLING2 {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLLING2";
