@@ -36,6 +36,15 @@
 
             tap-ms = <150>;
         };
+
+        SCROLLINGWPARAM: SCROLLINGWPARAM {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "SCROLLINGWPARAM";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            tap-ms = <150>;
+        };
     };
 
     keymap {
@@ -60,7 +69,9 @@
                                                                       &kp ENTER  &kp RIGHT      &kp UP_ARROW  &kp LEFT         &kp DOWN
             >;
 
-            sensor-bindings = <&SCROLLING>, <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings =
+                <&SCROLLINGWPARAM K_SCROLL_UP C_AC_SCROLL_DOWN>,
+                <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
