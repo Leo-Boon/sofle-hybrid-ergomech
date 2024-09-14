@@ -27,23 +27,6 @@
         };
     };
 
-    behaviors {
-        mousescroll: mousescroll {
-            compatible = "zmk,behavior-mouse-scroll";
-            label = "MOUSESCROLL";
-            #binding-cells = <1>;
-        };
-
-        scrolling2: scrolling2 {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLLING2";
-            #sensor-binding-cells = <0>;
-            bindings = <&mousescroll MOVE_UP>, <&mousescroll MOVE_DOWN>;
-
-            tap-ms = <150>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
