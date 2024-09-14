@@ -36,7 +36,7 @@ layers:
   - L
   - ;
   - ''''
-  - LSHFT
+  - LEFT ALT
   - Z
   - X
   - C
@@ -47,17 +47,17 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - RIGHT ALT
   - F13
   - LGUI
-  - LEFT ALT
+  - LEFT SHIFT
   - LCTRL
   - SPACE
   - {t: lower, h: toggle}
   - ENTER
   - BACKSPACE
   - RCTRL
-  - RALT
+  - RIGHT SHIFT
   - CONTEXT MENU
   - ENTER
   - RIGHT
