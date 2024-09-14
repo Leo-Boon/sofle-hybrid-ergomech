@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLLING2";
             #sensor-binding-cells = <0>;
-            bindings = <&mousescroll SCROLL_UP>, <&mousescroll SCROLL_DOWN>;
+            bindings = <&mousescroll MOVE_UP>, <&mousescroll MOVE_DOWN>;
 
             tap-ms = <150>;
         };
