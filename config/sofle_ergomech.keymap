@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLLING";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_AC_SCROLL_UP>, <&kp K_SCROLL_DOWN>;
+            bindings = <&mwh SCROLL_UP>, <&mwh SCROLL_DOWN>;
 
             tap-ms = <150>;
         };
@@ -69,9 +69,7 @@
                                                                       &kp ENTER  &kp RIGHT      &kp UP_ARROW  &kp LEFT         &kp DOWN
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings = <&SCROLLING>, <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
