@@ -5,9 +5,12 @@ manifest:
     - name: pointers-move-scroll
       url-base: https://github.com/petejohanson/zmk
   projects:
-    - name: pointers-move-scroll
+    - name: zmk
       remote: petejohanson
       revision: main
       import: app/west.yml
+    - name: pointers-move-scroll
+      remote: petejohanson
+      revision: main
   self:
     path: config
