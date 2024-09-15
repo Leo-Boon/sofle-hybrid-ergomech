@@ -27,17 +27,6 @@
         };
     };
 
-    behaviors {
-        scrolling: scrolling {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "SCROLLING";
-            #sensor-binding-cells = <2>;
-            bindings = <&mwh>, <&mwh>;
-
-            tap-ms = <150>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,7 +50,7 @@
             >;
 
             sensor-bindings =
-                <&scrolling SCROLL_UP SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp PG_UP PG_UP>;
         };
 
