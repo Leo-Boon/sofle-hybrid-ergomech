@@ -15,17 +15,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-&msc {
-    acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <0>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
-&mmv {
-    time-to-max-speed-ms = <400>;
-    acceleration-exponent = <1>;
-};
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -35,17 +24,6 @@
         adjust_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
-        };
-    };
-
-    behaviors {
-        scroll: scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCROLL_UP>, <&msc SCROLL_DOWN>;
-
-            tap-ms = <150>;
         };
     };
 
@@ -71,7 +49,7 @@
                                                                       &kp ENTER  &kp RIGHT      &kp UP_ARROW  &kp LEFT         &kp DOWN
             >;
 
-            sensor-bindings = <&scroll>, <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings = <&none>, <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
