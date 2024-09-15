@@ -27,6 +27,17 @@
         };
     };
 
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_UP>, <&msc MOVE_DOWN>;
+
+            tap-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
