@@ -2,15 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: pointers-move-scroll
+    - name: petejohanson
       url-base: https://github.com/petejohanson/zmk
   projects:
     - name: zmk
       remote: petejohanson
-      revision: main
+      revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: pointers-move-scroll
-      remote: petejohanson
-      revision: main
   self:
     path: config
