@@ -27,6 +27,17 @@
         };
     };
 
+    behaviors {
+        scroll: scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCROLL_UP>, <&msc SCROLL_DOWN>;
+
+            tap-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,9 +60,7 @@
                                                                       &kp ENTER  &kp RIGHT      &kp UP_ARROW  &kp LEFT         &kp DOWN
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings = <&scroll>, <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
