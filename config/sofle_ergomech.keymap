@@ -15,6 +15,7 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 35
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -35,7 +36,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_UP>, <&msc MOVE_DOWN>;
 
-            tap-ms = <15>;
+            tap-ms = <30>;
         };
     };
 
