@@ -65,7 +65,7 @@ layers:
   - LEFT
   - DOWN
   lower:
-  - {t: ▽, type: trans}
+  - '&msc SCROLL_UP'
   - F1
   - F2
   - F3
