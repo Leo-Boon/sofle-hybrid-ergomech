@@ -65,7 +65,7 @@ layers:
   - LEFT
   - DOWN
   lower:
-  - '&msc SCROLL_UP'
+  - '&msc MOVE_UP'
   - F1
   - F2
   - F3
