@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define LOWER 1
@@ -61,7 +60,9 @@
                                                                       &kp ENTER  &kp RIGHT      &kp UP_ARROW  &kp LEFT         &kp DOWN
             >;
 
-            sensor-bindings = <&scrollbehavior>, <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
