@@ -51,12 +51,12 @@ layers:
   - F13
   - LGUI
   - LEFT SHIFT
-  - LCTRL
   - SPACE
+  - LEFT CONTROL
   - {t: lower, h: toggle}
   - ENTER
-  - BACKSPACE
-  - RCTRL
+  - RIGHT CONTROL
+  - DELETE
   - RIGHT SHIFT
   - CONTEXT MENU
   - ENTER
