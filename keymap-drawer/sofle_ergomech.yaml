@@ -36,7 +36,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT ALT
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -47,25 +47,25 @@ layers:
   - ','
   - .
   - /
-  - RIGHT ALT
+  - RIGHT SHIFT
   - F13
   - LGUI
-  - LEFT SHIFT
+  - LEFT ALT
   - SPACE
   - LEFT CONTROL
   - {t: lower, h: toggle}
   - ENTER
   - RIGHT CONTROL
-  - DELETE
-  - RIGHT SHIFT
-  - CONTEXT MENU
+  - BACKSPACE
+  - RIGHT ALT
+  - F14
   - ENTER
   - RIGHT
   - UP ARROW
   - LEFT
   - DOWN
   lower:
-  - '&msc MOVE_UP'
+  - _
   - F1
   - F2
   - F3
