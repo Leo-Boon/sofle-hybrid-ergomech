@@ -12,7 +12,7 @@ layers:
   - '9'
   - '0'
   - '['
-  - ESC
+  - TAB
   - Q
   - W
   - E
@@ -24,7 +24,7 @@ layers:
   - O
   - P
   - ']'
-  - TAB
+  - ESCAPE
   - A
   - S
   - D
@@ -65,7 +65,7 @@ layers:
   - LEFT
   - DOWN
   lower:
-  - _
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -77,7 +77,7 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -107,10 +107,10 @@ layers:
   - +
   - '{'
   - '}'
-  - '['
-  - ']'
-  - ;
+  - (
+  - )
   - ':'
+  - _
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
